@@ -16,3 +16,6 @@ permalink: /blog/:title/
 
 # Build settings
 markdown: kramdown
+
+#add javascript
+js: javascript/GithubCall.js
