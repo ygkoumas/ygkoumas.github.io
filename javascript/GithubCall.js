@@ -1,4 +1,5 @@
-document.onload = function() {
+window.onload = function() {
+	alert(5555);
 	githubCall = new XMLHttpRequest;
 
 	githubCall.onreadystatechange=function() {
