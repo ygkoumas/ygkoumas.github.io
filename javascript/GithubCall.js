@@ -3,7 +3,7 @@ document.onload = function() {
 
 	githubCall.onreadystatechange=function() {
 		if (githubCall.readyState == 4 && githubCall.status == 200) {
-			document.getElementsByClassName('github-call')[0].innerHTML = JSON.parse(githubCall.response);
+			document.getElementsByClassName('github-call')[0].innerHTML = eval(githubCall.response);
 		}
 	};
 
