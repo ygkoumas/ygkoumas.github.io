@@ -1,5 +1,5 @@
 window.onload = function() {
-	alert(5555);
+
 	githubCall = new XMLHttpRequest;
 
 	githubCall.onreadystatechange=function() {
@@ -13,7 +13,12 @@ window.onload = function() {
 	githubCall.send();
 
 	myjsonp = function (res) {
-		return res.data[0].name;
+		var string = '<ul>'
+		for (i in res.data) {
+			string += '<li>'+res.data[i].name+'</li>'
+		}
+		string += '</ul>'
+		return string;
 	};
 };
 
