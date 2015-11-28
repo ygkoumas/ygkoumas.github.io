@@ -202,3 +202,30 @@ pre {
         }
     }
 }
+
+
+
+
+//yannis added
+.social-media-list {
+	> li:hover .icon > svg path {
+		fill: black;
+	}
+
+	> li:hover .icon > svg {
+		transform: rotate(360deg);
+		transition: 500ms;
+	}
+
+	> li .icon > svg path {
+		fill: $grey-color-icon;
+		transition: 1200ms;
+	}
+
+	> li .icon > svg {
+		width: 28px;
+		height: 28px;
+		margin-right: 10px;
+	}
+}
+
