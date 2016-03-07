@@ -4,25 +4,25 @@
 
     <div>
       <ul class="social-media-list">
-        {% if site.github_username %}
+        {% if site.github_name %}
         <li>
-          <a href="https://github.com/{{ site.github_username }}">
+          <a href="https://github.com/ygkoumas">
             <span class="icon  icon--github">
               {{ site.data.svg.github_icon }}
             </span>
-            <span class="username">{{ site.github_username }}</span>
+            <span class="name">{{ site.github_name }}</span>
           </a>
         </li>
         {% endif %}
 
-        {% if site.twitter_username %}
+        {% if site.linkedin_name %}
         <li>
-          <a href="https://twitter.com/{{ site.twitter_username }}">
+          <a href="https://www.linkedin.com/in/yannis-gkoumas-1944a775">
             <span class="icon  icon--linkedin">
               {{ site.data.svg.linkedin_icon }}
             </span>
 
-            <span class="username">{{ site.twitter_username }}</span>
+            <span class="name">{{ site.linkedin_name }}</span>
           </a>
         </li>
         {% endif %}
