@@ -193,39 +193,40 @@ pre {
 
     > svg {
         display: inline-block;
-        width: 16px;
-        height: 16px;
+        width: 28px;
+        height: 28px;
         vertical-align: middle;
-
-        path {
-            fill: $grey-color;
-        }
+        margin-right: 10px;
     }
 }
 
-
-
-
 //yannis added
-.social-media-list {
-	> li:hover .icon > svg path {
+
+.icon--feed > svg path {
+    fill: $grey-color-icon;
+    transition: 1200ms;
+}
+
+a:hover .icon > svg path {
+    fill: black;
+}
+
+.social-media-list > li {
+
+    padding-bottom: 5px;
+
+	a:hover .icon > svg path {
 		fill: black;
 	}
 
-	> li:hover .icon > svg {
+	a:hover .icon > svg {
 		transform: rotate(360deg);
 		transition: 500ms;
 	}
 
-	> li .icon > svg path {
+	.icon > svg path {
 		fill: $grey-color-icon;
 		transition: 1200ms;
-	}
-
-	> li .icon > svg {
-		width: 28px;
-		height: 28px;
-		margin-right: 10px;
 	}
 }
 
