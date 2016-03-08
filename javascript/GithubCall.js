@@ -1,4 +1,4 @@
-window.onload = function() {
+main = function() {
 
 	githubCall = new XMLHttpRequest;
 
@@ -23,3 +23,6 @@ window.onload = function() {
 };
 
 
+window.onload = function() {
+	window.setTimeout(main, 2000);
+}
