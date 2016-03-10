@@ -13,11 +13,12 @@ main = function() {
 	githubCall.send();
 
 	myjsonp = function (res) {
-		var string = '<ul>'
+		var string = '<ul>';
 		for (i in res.data) {
-			string += '<li>'+res.data[i].name+'</li>'
+			var data = res.data[i];
+			string += '<li><a title="'+data.description+'" href="'+data.html_url+'">'+data.name+'</a></li>';
 		}
-		string += '</ul>'
+		string += '</ul>';
 		return string;
 	};
 };
