@@ -89,15 +89,11 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: $link-color;
     text-decoration: none;
 
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
     &:hover {
-        color: $text-color;
+        color: $hover-color;
         text-decoration: underline;
     }
 }
@@ -208,7 +204,7 @@ pre {
 }
 
 a:hover .icon > svg path {
-    fill: black;
+    fill: $text-color;
 }
 
 .social-media-list > li {
@@ -216,7 +212,7 @@ a:hover .icon > svg path {
     padding-bottom: 5px;
 
 	a:hover .icon > svg path {
-		fill: black;
+		fill: $text-color;
 	}
 
 	a:hover .icon > svg {
@@ -234,4 +230,12 @@ a:hover .icon > svg path {
     padding-bottom: 20px;
     width: 45px;
     height: 45px;
+}
+
+.github-call a {
+    color: $list-link-color;
+
+    &:hover {
+        color: $hover-color;
+    }
 }
