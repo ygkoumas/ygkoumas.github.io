@@ -232,10 +232,13 @@ a:hover .icon > svg path {
     height: 45px;
 }
 
-.github-call a {
-    color: $list-link-color;
+.github-call {
+    a {
+        font-weight: bold;
+    }
 
-    &:hover {
-        color: $hover-color;
+    li > span {
+        display: block;
+        color: $grey-color;
     }
 }

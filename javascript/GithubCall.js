@@ -16,7 +16,14 @@ main = function() {
 		var string = '<ul>';
 		for (i in res.data) {
 			var data = res.data[i];
-			string += '<li><a title="'+data.description+'" href="'+data.html_url+'">'+data.name+'</a></li>';
+			if (data.description == null) {
+				data.description = '';
+			}
+
+			var link = '<a title="'+data.description+'" href="'+data.html_url+'">'+data.name+'</a>';
+			var description = '<span>'+data.description+' - language: '+data.language+'</span>';
+
+			string += '<li>' + link + description + '</li>';
 		}
 		string += '</ul>';
 		return string;
